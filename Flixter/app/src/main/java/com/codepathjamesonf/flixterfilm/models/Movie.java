@@ -22,6 +22,7 @@ public class Movie {
         overview = jsonObject.getString("overview");
     }
 
+
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
         List<Movie> movies = new ArrayList<>();
         for (int i = 0; i <movieJsonArray.length(); i++) {
