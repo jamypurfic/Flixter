@@ -13,6 +13,7 @@ import java.util.List;
 
 @Parcel
 public class Movie {
+    int movieId;
     String backdropPath;
     String posterPath;
     String title;
@@ -32,6 +33,7 @@ public class Movie {
         ratingBar = jsonObject.getDouble("vote_average");
         popularity = jsonObject.getString("popularity");
         release_date = jsonObject.getString("release_date");
+        movieId = jsonObject.getInt("id");
     }
 
 
@@ -70,6 +72,10 @@ public class Movie {
 
     public String getRelease_date() {
         return release_date;
+    }
+
+    public int getMovieId() {
+        return movieId;
     }
 }
 
