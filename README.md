@@ -26,8 +26,8 @@ Flixterfilm is an app that allows users to browse movies from the [The Movie Dat
 
 ### App Walkthough GIF
 
+![20220730_160828](https://user-images.githubusercontent.com/20778976/181994892-774e779d-3342-4630-bd2a-be7648b9cb65.gif)
 
-![20220730_155053](https://user-images.githubusercontent.com/20778976/181994501-d3f4158c-d1cf-409d-acce-12da540094bc.gif)
 
 
 ### Notes
