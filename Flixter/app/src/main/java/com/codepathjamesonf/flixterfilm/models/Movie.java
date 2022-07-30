@@ -18,6 +18,8 @@ public class Movie {
     String title;
     String overview;
     double ratingBar;
+    String popularity;
+    String release_date;
 
     //Empty constructor that parcel requires
     public Movie() {}
@@ -28,6 +30,8 @@ public class Movie {
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
         ratingBar = jsonObject.getDouble("vote_average");
+        popularity = jsonObject.getString("popularity");
+        release_date = jsonObject.getString("release_date");
     }
 
 
@@ -58,6 +62,14 @@ public class Movie {
 
     public double getRatingBar() {
         return ratingBar;
+    }
+
+    public String getPopularity() {
+        return popularity;
+    }
+
+    public String getRelease_date() {
+        return release_date;
     }
 }
 
