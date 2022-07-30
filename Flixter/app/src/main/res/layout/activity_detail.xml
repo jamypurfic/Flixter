@@ -48,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="@font/abel"
             android:text="@string/release_date"
             android:textColor="@color/black" />
 
@@ -56,7 +57,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:textColor="@color/black" />
+            android:fontFamily="@font/abel"
+            android:textColor="@color/black"
+            tools:text="release" />
 
 
     </LinearLayout>
@@ -71,6 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="@font/abel"
             android:text="@string/popularity"
             android:textColor="@color/black" />
 
@@ -79,6 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:fontFamily="@font/abel"
             android:textColor="@color/black"
             tools:text="textview" />
 
