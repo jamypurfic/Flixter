@@ -19,6 +19,7 @@ import com.codepathjamesonf.flixterfilm.DetailActivity;
 import com.codepathjamesonf.flixterfilm.R;
 import com.codepathjamesonf.flixterfilm.models.Movie;
 
+import org.parceler.Parcels;
 import org.w3c.dom.Text;
 
 import java.util.List;
@@ -81,8 +82,19 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 @Override
                 public void onClick(View view) {
 
-                    Intent i = new Intent(context, DetailActivity.class);
-                    context.startActivity(i); // brings up the second activity
+                    //defining a new intent targeting DetailActivity
+                    Intent intent = new Intent(context, DetailActivity.class);
+
+                    // put "extras" into the bundle for access in the second activity
+                    // using parceler to wrap the whole object called movie
+                    intent.putExtra("movie", Parcels.wrap(movie));
+
+                    // brings up the second activity
+                    context.startActivity(intent);
+
+
+
+
                 }
             });
 
