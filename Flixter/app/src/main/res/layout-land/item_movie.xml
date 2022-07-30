@@ -5,7 +5,10 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/black">
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="#75EDECEC"
+    android:padding="2dp">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -24,8 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:fontFamily="@font/abel"
-        android:textColor="#a54c4c"
+        android:fontFamily="@font/alegreya_sc"
+        android:textColor="#C630302D"
         android:textSize="35sp"
         tools:text="Jurassic World Dominion" />
 
@@ -38,7 +41,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textColor="#C3BEBE"
+        android:textColor="#C630302D"
         android:textSize="17sp"
         tools:text="Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history’s most fearsome creatures." />
 </RelativeLayout>
