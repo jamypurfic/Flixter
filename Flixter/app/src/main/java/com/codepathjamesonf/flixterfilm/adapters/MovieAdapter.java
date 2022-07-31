@@ -81,7 +81,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     .load(imageUrl)
                     //change dimension of the image
                     .override(400, 300)
-                    .transform(new RoundedCorners(30))
+                    .transform(new RoundedCorners(25))
                     .into(ivPoster);
 
 
