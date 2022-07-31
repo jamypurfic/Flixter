@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.codepathjamesonf.flixterfilm.DetailActivity;
 import com.codepathjamesonf.flixterfilm.R;
 import com.codepathjamesonf.flixterfilm.models.Movie;
@@ -76,7 +77,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             } else {
                 imageUrl = movie.getPosterPath();            }
 
-            Glide.with(context).load(imageUrl).into(ivPoster);
+            Glide.with(context)
+                    .load(imageUrl)
+                    //change dimension of the image
+                    .override(400, 300)
+                    .transform(new RoundedCorners(30))
+                    .into(ivPoster);
+
 
             container.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -85,9 +92,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     //defining a new intent targeting DetailActivity
                     Intent intent = new Intent(context, DetailActivity.class);
 
+
                     // put "extras" into the bundle for access in the second activity
                     // using parceler to wrap the whole object called movie
                     intent.putExtra("movie", Parcels.wrap(movie));
+
+
 
                     // brings up the second activity
                     context.startActivity(intent);
