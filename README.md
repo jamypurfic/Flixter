@@ -26,13 +26,13 @@ Flixterfilm is an app that allows users to browse movies from the [The Movie Dat
 
 ### App Walkthough GIF
 
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
+![20220730_160828](https://user-images.githubusercontent.com/20778976/181994892-774e779d-3342-4630-bd2a-be7648b9cb65.gif)
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+
 
 ### Notes
 
-Describe any challenges encountered while building the app.
+I had some hard times trying to implement the stretch stories...
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
